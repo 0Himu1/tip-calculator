@@ -1,0 +1,28 @@
+.title {
+	font-size: 16px;
+	font-weight: 700;
+	color: #7f9c9f;
+	margin-bottom: 7px;
+}
+
+.inputBox {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	background: #fafafa;
+	padding: 15px 5px;
+}
+
+input {
+	font-family: inherit;
+	font-size: 24px;
+	font-weight: 700;
+	color: #00474b;
+	border: none;
+}
+
+input:focus,
+input:active {
+	border: none;
+}

@@ -2,6 +2,6 @@ import React from 'react';
 
 export default function TipSelectors() {
   return (
-    <div>TipSelectors</div>
+    <div><h1>Main</h1></div>
   );
 }
