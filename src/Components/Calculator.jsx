@@ -2,15 +2,30 @@ import React from 'react';
 import MainInputs from './MainInputs';
 import TipSelectors from './TipSelectors';
 import './Styles/Calculator.css';
-import dolar from '../images/icon-dollar.svg';
-import person from '../images/icon-person.svg';
+import DollerIcon from './Icons/DollerIcon';
+import PersonIcon from './Icons/PersonIcon';
 
-export default function Calculator() {
+export default function Calculator({ handelClick, changeHandler, tip }) {
   return (
     <div className="calculator">
-      <MainInputs img={dolar} />
-      <TipSelectors />
-      <MainInputs img={person} />
+      <MainInputs
+        Icon={DollerIcon}
+        title="Bill"
+        name="bill"
+        changeHandler={changeHandler}
+      />
+      <TipSelectors
+        title="Select Tip %"
+        handelClick={handelClick}
+        changeHandler={changeHandler}
+        tip={tip}
+      />
+      <MainInputs
+        Icon={PersonIcon}
+        title="Number of People"
+        name="people"
+        changeHandler={changeHandler}
+      />
     </div>
   );
 }

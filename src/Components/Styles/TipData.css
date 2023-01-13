@@ -1,0 +1,34 @@
+.dataBox {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+    width: 100%;
+}
+
+.text {
+	margin-bottom: 28px;
+}
+
+h2 {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+p {
+	color: #7f9c9f;
+	font-size: 13px;
+	font-weight: 400;
+}
+h1 {
+	color: #26c2ad;
+	font-size: 46px;
+	font-weight: 700;
+}
+
+@media (max-width: 375px) {
+    h1 {
+        font-size: 32px;
+    }
+}

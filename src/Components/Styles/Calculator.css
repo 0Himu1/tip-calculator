@@ -1,7 +1,14 @@
 .calculator {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    padding: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	padding: 16px;
+	width: 100%;
+}
+
+@media (max-width: 375px) {
+	.calculator {
+		padding: 0px;
+	}
 }

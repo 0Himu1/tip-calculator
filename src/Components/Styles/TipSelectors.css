@@ -1,0 +1,20 @@
+.title {
+	font-size: 16px;
+	font-weight: 700;
+	color: #7f9c9f;
+	margin-bottom: 7px;
+}
+
+.tipButtons {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 15px;
+}
+
+@media (max-width: 375px) {
+	.tipButtons {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+	}
+}

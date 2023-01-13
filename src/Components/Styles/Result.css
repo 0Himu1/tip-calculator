@@ -1,0 +1,28 @@
+.tipData {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	padding: 40px;
+	background-color: #00474b;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+.resetButton {
+	background: #26c2ad;
+	color: #00474b;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+	border-radius: 6px;
+	border: none;
+	width: 100%;
+}
+
+@media (max-width: 375px) {
+    .tipData {
+        padding: 25px 20px;
+    }
+}
