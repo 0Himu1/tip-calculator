@@ -7,7 +7,7 @@
 	width: 100%;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 440px) {
 	.calculator {
 		padding: 0px;
 	}
