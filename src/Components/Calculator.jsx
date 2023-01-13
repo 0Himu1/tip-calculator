@@ -5,7 +5,10 @@ import './Styles/Calculator.css';
 import DollerIcon from './Icons/DollerIcon';
 import PersonIcon from './Icons/PersonIcon';
 
-export default function Calculator({ handelClick, changeHandler, tip }) {
+export default function Calculator({
+  handelClick, changeHandler, tip, state,
+}) {
+  const { bill, people } = state;
   return (
     <div className="calculator">
       <MainInputs
@@ -13,6 +16,7 @@ export default function Calculator({ handelClick, changeHandler, tip }) {
         title="Bill"
         name="bill"
         changeHandler={changeHandler}
+        value={bill}
       />
       <TipSelectors
         title="Select Tip %"
@@ -24,6 +28,7 @@ export default function Calculator({ handelClick, changeHandler, tip }) {
         Icon={PersonIcon}
         title="Number of People"
         name="people"
+        value={people}
         changeHandler={changeHandler}
       />
     </div>

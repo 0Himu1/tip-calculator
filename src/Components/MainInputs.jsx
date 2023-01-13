@@ -8,6 +8,7 @@ export default function MainInputs({
   placeholder,
   changeHandler,
   name,
+  value,
 }) {
   return (
     <div className="mainInput">
@@ -16,7 +17,12 @@ export default function MainInputs({
         <div className="img">
           <Icon />
         </div>
-        <Input placeholder={placeholder} changeHandler={changeHandler} name={name} />
+        <Input
+          placeholder={placeholder}
+          changeHandler={changeHandler}
+          name={name}
+          value={value}
+        />
       </div>
     </div>
   );
